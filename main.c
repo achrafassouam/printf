@@ -9,31 +9,13 @@
  */
 int main(void)
 {
-    int len;
-    int len2;
-    unsigned int ui;
-    void *addr;
     
-    len = _printf("Let's try to printf a simple sentence.\n");
-    len2 = printf("Let's try to printf a simple sentence.\n");
-    ui = (unsigned int)INT_MAX + 1024;
-    addr = (void *)0x7ffe637541f0;
-    
-    _printf("Unsigned:[%u]\n", ui);
-    printf("Unsigned:[%u]\n", ui);
-    
-    _printf("Length:[%d, %i]\n", len, len);
-    printf("Length:[%d, %i]\n", len2, len2);
-    
-    _printf("Address:[%p]\n", addr);
-        printf("Address:[%p]\n", addr);
-    
-    _printf("Character:[%c]\n", 'H');
-     printf("Character:[%c]\n", 'H');
-     _printf("String:[%s]\n", "I am a string !");
-     printf("String:[%s]\n", "I am a string !");
-     len = _printf("Percent:[%%]\n");
-     len2 = printf("Percent:[%%]\n");
+   int i = 14;
+
+    _printf("Character:[%i]\n", i);
+     printf("Character:[%i]\n", i);
+     _printf("String:[%d]\n", i);
+     printf("String:[%d]\n", i);
     
     return (0);
 }

@@ -7,7 +7,7 @@
  * Return: char
  */
 
-char *itao(long int num, int base)
+char *itoa(long int num, int base)
 {
 	static char *array = "0123456789abcdef";
 	static char buffer[50];
